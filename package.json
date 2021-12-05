@@ -1,0 +1,27 @@
+{
+  "name": "desafio_modulo3",
+  "version": "1.0.0",
+  "description": "Desafio modulo 3 - Site automationPractice",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run",
+    "report:merge": "mochawesome-merge > index.json",
+    "report:mocha": "marge index.json",
+    "report:clean": "rimraf mochawesome-report index.json"
+
+
+  },
+  "author": "Jaqueline Oliveira",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^9.0.0"
+  },
+  "devDependencies": {
+    "chance": "^1.1.8",
+    "cypress-multi-reporters": "^1.5.0",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.0.1"
+  }
+}
