@@ -8,6 +8,5 @@
 
 ![cadastro-spec js](https://user-images.githubusercontent.com/74922991/144759516-ffb19130-f49f-4875-acf3-bca86df827fb.gif)
 
-# Executando em modo "normal"
+https://jaquelineaoliveira.github.io/Desafio_1/
 
-1) Executar o comando npm run cy:open 
