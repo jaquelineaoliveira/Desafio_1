@@ -5,7 +5,7 @@ let chance = new Chance()
 
 
 describe('Cadastro', () => {
-    it('Cadastro efetuado com sucesso', () => {
+    it('Quando preencher o cadastro e salvar, o usuário seja criado com êxito', () => {
 
         cy.visit("/")
 
