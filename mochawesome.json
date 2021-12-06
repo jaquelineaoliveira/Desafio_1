@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-12-06T23:46:36.148Z",
-    "end": "2021-12-06T23:47:06.689Z",
-    "duration": 30541,
+    "start": "2021-12-06T23:47:08.034Z",
+    "end": "2021-12-06T23:47:46.668Z",
+    "duration": 38634,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "5cb6f5ee-a12e-436e-8275-d2c3a0579535",
+      "uuid": "afef9f98-91f4-42da-918d-e5a11eecb23a",
       "title": "",
       "fullFile": "cypress/integration/cadastro-spec.js",
       "file": "cypress/integration/cadastro-spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ae4267f7-95ad-40d1-8a75-b9fdf1fb8596",
+          "uuid": "b0fe6b93-e4c5-44eb-85d6-0d643a48edd0",
           "title": "Cadastro",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Cadastro efetuado com sucesso",
               "fullTitle": "Cadastro Cadastro efetuado com sucesso",
               "timedOut": null,
-              "duration": 30385,
+              "duration": 38511,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(\"/\"); // Clicar btn \"Sign In\"\ncy.get('a[class=\"login\"]').click(); //Informar um e-mail para cadastro \ncy.get('input#email_create').type(chance.email()); //Clicar btn \"Create an account\"\ncy.get('#SubmitCreate').click();\n/*************************************\n *      YOUR PERSONAL INFORMATION\n *************************************/\ncy.wait(2000);\ncy.get('#id_gender2').check(); // Mrs \ncy.get('input[name=\"customer_firstname\"]').type(chance.first()); //First name \ncy.get('input[name=\"customer_lastname\"]').type(chance.last()); // Last name\n//   cy.get('input#email').type(chance.email()) // email  \ncy.get('input#passwd').type(\"Teste@123\"); // Password \ncy.get('select#days').select('16'); // Days\ncy.get('select#months').select('January'); // Months\ncy.get('select#years').select('1997'); // Years\ncy.get('input#newsletter').check(); // Newsletter \n/*************************************\n *      YOUR ADDRESS\n *************************************/\ncy.get('input#firstname').type(chance.first()); // First Name \ncy.get('input#lastname').type(chance.last()); // Last Name\ncy.get('input#company').type(chance.company()); // Company \ncy.get('input#address1').type(chance.address()); // Adress \ncy.get('input#address2').type(chance.address()); // Adress 2\ncy.get('input#city').type(chance.city()); // City\ncy.get('select#id_state').select('Louisiana'); // State\ncy.get('input#postcode').type(chance.zip()); // PostCode\ncy.get('textArea#other').type(\"Informação adicional Teste\"); // Additional Information\ncy.get('input#phone').type(chance.phone());\ncy.get('input#phone_mobile').type(chance.phone());\ncy.get('input#alias').type(chance.address());\ncy.get('button#submitAccount').click();\n/**********************\n *      Asserts\n***********************/\ncy.url().should('to.equal', 'http://automationpractice.com/index.php?controller=my-account');\ncy.get('div#center_column').should('contain', 'Welcome to your account');",
               "err": {},
-              "uuid": "aceebbd0-8fdf-431b-8125-1c8a046bee3b",
-              "parentUUID": "ae4267f7-95ad-40d1-8a75-b9fdf1fb8596",
+              "uuid": "48ff1a7b-85ff-4d76-b07f-a076cd143746",
+              "parentUUID": "b0fe6b93-e4c5-44eb-85d6-0d643a48edd0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "aceebbd0-8fdf-431b-8125-1c8a046bee3b"
+            "48ff1a7b-85ff-4d76-b07f-a076cd143746"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 30385,
+          "duration": 38511,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
